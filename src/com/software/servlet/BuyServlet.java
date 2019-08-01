@@ -17,6 +17,7 @@ public class BuyServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		UserServiceImpl uS = new UserServiceImpl();
+		HttpSession session = req.getSession();
 		//获取对象中的值
 		User user = (User)req.getSession().getAttribute("user");
 		//获取用户id

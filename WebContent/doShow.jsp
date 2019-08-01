@@ -28,5 +28,3 @@
 		</table>
 </body>
 </html>
-</body>
-</html>

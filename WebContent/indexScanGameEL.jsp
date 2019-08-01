@@ -69,7 +69,7 @@
 				</tr>
 <c:forEach var="game" items="${list}">
 	<tr>
-					<th><a href="doGameInfo?gameId=${game.id}"><h3>${game.name1}&nbsp;&nbsp;</h3><a></th>
+					<th><a href="doGameInfo?gameId=${game.id}"><h3>${game.name1}&nbsp;&nbsp;</h3></a></th>
 					<th><h3>&nbsp;&nbsp;${game.name2}&nbsp;&nbsp;</h3></th>
 					<th><h3>&nbsp;&nbsp;${game.name3}&nbsp;&nbsp;</h3></th>
 					<th><h3>&nbsp;&nbsp;${game.price}&nbsp;&nbsp;</h3></th>

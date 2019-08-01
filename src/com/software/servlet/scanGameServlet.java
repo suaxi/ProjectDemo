@@ -22,7 +22,7 @@ public class scanGameServlet extends HttpServlet {
 		List<Map<String, Object>> list = qS.scanGame(gameName);
 		req.getSession().setAttribute("list", list);
 		//请求转发到游戏信息查询界面
-		req.getRequestDispatcher("customeEL.jsp").forward(req, resp);
+		req.getRequestDispatcher("customerEL.jsp").forward(req, resp);
 	}
 
 	@Override
