@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>EpicAdminView</title>
+<title>Epic AdminView</title>
 <meta name="keywords" content="Game Website Template, free templates, website templates, CSS, XHTML" />
 <meta name="description" content="Game Website Template - download free XHTML/CSS files from cssMoban.com" />
 <link href="templatemo_style.css" rel="stylesheet" type="text/css" />

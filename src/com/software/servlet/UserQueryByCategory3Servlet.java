@@ -22,9 +22,12 @@ public class UserQueryByCategory3Servlet extends HttpServlet{
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		//调用service层方法，按策略类型查询游戏信息
 		QueryServiceImpl qs = new QueryServiceImpl();
 		List<Map<String, Object>> list = qs.QueryByGameCategory3();
+		//设置属性的值
 		req.getSession().setAttribute("list", list);
+		//请求转发到游戏信息界面并显示查询出的信息
 		req.getRequestDispatcher("indexScanGameEL.jsp").forward(req, resp);
 	}
 	

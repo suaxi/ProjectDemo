@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Epic Shop</title>
 </head>
 <body>
 <table border="1px" cellspacing="0" >

@@ -10,7 +10,6 @@ import com.software.service.IQueryService;
 
 public class QueryServiceImpl implements IQueryService {
 	QueryDaoImpl qd = new QueryDaoImpl();
-
 	@Override
 	public List<Map<String, Object>> UserQueryAll() {
 		List<Map<String, Object>> list = null;

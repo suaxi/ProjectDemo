@@ -2,7 +2,7 @@ package com.software.entity;
 
 /**
  * @author 作者 : 007
- * @version 创建时间：2019年6月17日 上午10:59:30 类说明
+ * @version 创建时间：2019年6月17日 上午10:59:30
  */
 public class User {
 	private String id;
@@ -22,6 +22,12 @@ public class User {
 		this.username = username;
 		this.password = password;
 		this.idnumber = idnumber;
+	}
+
+	
+	public User(String username) {
+		super();
+		this.username = username;
 	}
 
 	public User(String username, String password) {

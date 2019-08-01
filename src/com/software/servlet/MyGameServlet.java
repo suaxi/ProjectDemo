@@ -18,12 +18,14 @@ public class MyGameServlet extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		QueryServiceImpl qS = new QueryServiceImpl();
-		HttpSession session = req.getSession();
+		//获取对象的属性
 		User user = (User)req.getSession().getAttribute("user");
 		String UserId = user.getId();
+		//调用service层方法，通过用户id查询当前用户的游戏库信息存入list表中
 		List<Map<String, Object>> list = qS.QueryMyGame(Integer.parseInt(UserId));
-		System.out.println(UserId);
+		//System.out.println(UserId);
 		req.getSession().setAttribute("list", list);
+		//请求转发到我的游戏库界面并显示查询出来的信息
 		req.getRequestDispatcher("indexMyGameEL.jsp").forward(req, resp);
 	}
 	

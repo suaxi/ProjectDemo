@@ -16,9 +16,12 @@ public class QueryByGameIdServlet extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		QueryServiceImpl qS = new QueryServiceImpl();
+		//获取页面提交的参数
 		String gameId = req.getParameter("id");
+		//调用service层方法，通过获取的游戏id查询游戏详细信息存入list表中
 		List<Map<String, Object>> list = qS.QueryByGameId(Integer.parseInt(gameId));
 		req.getSession().setAttribute("game", list);
+		//请求转发到管理员修改游戏信息界面
 		req.getRequestDispatcher("AdminModifyGameInfo.jsp").forward(req, resp);	
 	}
 	

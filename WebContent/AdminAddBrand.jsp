@@ -15,7 +15,7 @@
 	rel="stylesheet">
 
 <!-- title of site -->
-<title>管理员添加游戏厂商</title>
+<title>Admin Add Brand Info</title>
 
 <!--font-awesome.min.css-->
 <link rel="stylesheet" href="css/font-awesome.min.css">

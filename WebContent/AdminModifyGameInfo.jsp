@@ -15,7 +15,7 @@
 	rel="stylesheet">
 
 <!-- title of site -->
-<title>管理员修改游戏信息</title>
+<title>Admin Modify Game Info</title>
 
 <!--font-awesome.min.css-->
 <link rel="stylesheet" href="css/font-awesome.min.css">

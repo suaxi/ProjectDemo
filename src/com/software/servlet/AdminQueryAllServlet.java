@@ -16,9 +16,11 @@ public class AdminQueryAllServlet extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		QueryServiceImpl qS = new QueryServiceImpl();
+		//调用service层方法，管理员查询所有游戏信息
 		List<Map<String, Object>> list = qS.AdminQueryAll();
 		req.getSession().setAttribute("list", list);
-		req.getRequestDispatcher("AdminEL.jsp").forward(req, resp);	
+		//请求转发到管理员界面
+		req.getRequestDispatcher("AdminEL.jsp").forward(req, resp);	//页面跳转
 	}
 	
 	@Override

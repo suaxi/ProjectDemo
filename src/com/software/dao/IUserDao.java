@@ -32,7 +32,7 @@ public interface IUserDao {
 	
 	
 	/**
-	 * µÇÂ½
+	 * µÇÂ¼
 	 * @param user
 	 * @return
 	 * @throws SQLException 

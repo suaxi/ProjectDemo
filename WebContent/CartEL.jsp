@@ -5,11 +5,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Epic Shop</title>
 </head>
 <body>
 <table border="1px" cellspacing="0" >
-<caption>购物车</caption>
+<caption>Cart</caption>
 				<tr>
 					<th>游戏名</th>
 					<th>价格</th>

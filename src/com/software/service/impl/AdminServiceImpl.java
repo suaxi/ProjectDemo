@@ -10,6 +10,7 @@ import com.software.service.IAdminService;
 
 public class AdminServiceImpl implements IAdminService{
 	AdminDaoImpl ad = new AdminDaoImpl();
+
 	@Override
 	public int add(Game game) {
 		int addGame=0;
@@ -21,6 +22,7 @@ public class AdminServiceImpl implements IAdminService{
 		}
 		return addGame;
 	}
+
 	@Override
 	public int modifyInfo(Game game) {
 		int row = 0;
@@ -32,6 +34,7 @@ public class AdminServiceImpl implements IAdminService{
 		}
 		return row;
 	}
+
 	@Override
 	public int addBrand(Brand brand) {
 		int row=0;
@@ -43,6 +46,7 @@ public class AdminServiceImpl implements IAdminService{
 		}
 		return row;
 	}
+
 	@Override
 	public int addCategory(Category category) {
 		int row=0;

@@ -16,7 +16,7 @@
 	rel="stylesheet">
 
 <!-- title of site -->
-<title>登录</title>
+<title>Sign In</title>
 
 <!--font-awesome.min.css-->
 <link rel="stylesheet" href="css/font-awesome.min.css">

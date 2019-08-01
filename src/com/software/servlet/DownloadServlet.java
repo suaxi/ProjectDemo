@@ -21,8 +21,8 @@ public class DownloadServlet extends HttpServlet{
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		//通过路径得到一个输入流
-				String path = "C:\\Users\\Kaizuka\\Desktop\\images\\show.png";
+				//通过路径得到一个输入流
+				String path = "C:\\Users\\Suaxi\\Desktop\\images\\show.png";
 				FileInputStream fis = new FileInputStream(path);
 				//创建字节输出流
 				ServletOutputStream sos = resp.getOutputStream();
@@ -40,11 +40,13 @@ public class DownloadServlet extends HttpServlet{
 				
 				//执行输出操作
 				int len = 1;
+				//设置每一次读取的字节流大小
 				byte[] b = new byte[1024];
 				while((len=fis.read(b))!=-1){
+					//输出字节流
 					sos.write(b,0,len);
 				}
-				
+				//关闭资源
 				sos.close();
 				fis.close();
 			}

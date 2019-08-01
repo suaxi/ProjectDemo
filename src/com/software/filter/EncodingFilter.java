@@ -13,7 +13,7 @@ import javax.servlet.annotation.WebFilter;
 /** 
 * @author 作者 : dyb
 * @version 创建时间：2019年6月14日 下午3:47:09 
-* 类说明 
+* 过滤器 设置字符类型为utf-8
 */
 @WebFilter(urlPatterns="/*")
 public class EncodingFilter implements Filter{

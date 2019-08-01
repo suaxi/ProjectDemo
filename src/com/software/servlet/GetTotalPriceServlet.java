@@ -18,13 +18,13 @@ public class GetTotalPriceServlet extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		QueryServiceImpl qS = new QueryServiceImpl();
-		UserServiceImpl uS = new UserServiceImpl();
-		HttpSession session = req.getSession();
+		//获取用户对象的值
 		User user = (User)req.getSession().getAttribute("user");
 		String userId = user.getId();
+		//调用service层方法，通过用户id查询用户购物车中商品的总价
 		Object totalPrice = qS.GetTotalPrice(Integer.parseInt(userId));
 		resp.getWriter().write("共计"+totalPrice);
-	/*	uS.changeCartStatus(CartId);*/
+		/*	uS.changeCartStatus(CartId);*/
 		
 	}
 	

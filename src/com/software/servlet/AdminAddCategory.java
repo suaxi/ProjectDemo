@@ -23,13 +23,16 @@ public class AdminAddCategory extends HttpServlet{
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		AdminServiceImpl ad = new AdminServiceImpl();
+		//获取页面上的游戏类型信息
 		String category = req.getParameter("category");
 		Category category2 = new Category(category);
+		//调用service层方法添加游戏类型
 		int result = ad.addCategory(category2);
+		//根据返回值判断是否添加成
 		PrintWriter writer = resp.getWriter();
-		if(result>0) {
+		if(result>0) {//添加成功
 			writer.write("1");
-		}else {
+		}else {//添加失败
 			writer.write("2");
 		}
 	}

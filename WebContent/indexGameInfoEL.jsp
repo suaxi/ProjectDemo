@@ -5,9 +5,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Epic Shop</title>
 <head>
-	<title>Epic商店</title>
 	<meta charset="utf-8">
 	<meta name="author" content="pixelhint.com">
 	<meta name="description" content="Magnetic is a stunning responsive HTML5/CSS3 photography/portfolio website template"/>
@@ -16,7 +15,6 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
     <script type="text/javascript" src="js/jquery1.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-</style>
 </head>
 <body>
 	<header>

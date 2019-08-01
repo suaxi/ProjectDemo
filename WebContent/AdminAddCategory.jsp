@@ -15,7 +15,7 @@
 	rel="stylesheet">
 
 <!-- title of site -->
-<title>管理员添加游戏类型</title>
+<title>Admin Add Category Info</title>
 
 <!--font-awesome.min.css-->
 <link rel="stylesheet" href="css/font-awesome.min.css">

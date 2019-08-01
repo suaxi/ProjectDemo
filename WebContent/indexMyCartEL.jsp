@@ -4,7 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
-	<title>Epic商店</title>
+	<title>Epic Shop</title>
 	<meta charset="utf-8">
 	<meta name="author" content="pixelhint.com">
 	<meta name="description" content="Magnetic is a stunning responsive HTML5/CSS3 photography/portfolio website template"/>
@@ -13,7 +13,6 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
     <script type="text/javascript" src="js/jquery1.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-</style>
    <style type="text/css">
 	a{text-decoration:none;}
 	</style>

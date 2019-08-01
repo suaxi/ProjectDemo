@@ -33,7 +33,6 @@ public class UserDaoImpl implements IUserDao{
 		return user;
 	}
 
-	
 	@Override
 	public User queryByUser(User user) throws SQLException {
 		String sql = "select * from t_user where username=? and password=?";

@@ -14,12 +14,15 @@ import com.software.service.impl.QueryServiceImpl;
 
 @WebServlet("/doQueryByAsc")
 public class UserQueryByAscServlet extends HttpServlet{
-	QueryServiceImpl qS = new QueryServiceImpl();
+
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		//调用service层方法，用户（升序）查询所有游戏信息
+		QueryServiceImpl qS = new QueryServiceImpl();
 		List<Map<String, Object>> list = qS.UserQueryAllByAsc();
-		
+		//设置属性的值
 		req.getSession().setAttribute("list", list);
+		//请求转发到游戏信息界面并显示查询出的信息
 		req.getRequestDispatcher("indexAllGameEL.jsp").forward(req, resp);	
 	}
 	

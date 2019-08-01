@@ -62,11 +62,10 @@
 		$.ajax({
 			type:"POST",
 			url:"doCheack",
-			//data:"name="+name+"&password=123",
 			data:$("#ff").serialize(),			
-			datetype:"text",//期望接收的数据类型
+			dataType:"text",//期望接收的数据类型
 			success:function(msg){//接收响应数据 msg就是响应正文
-				alert("msg"+msg);				
+				//alert("msg"+msg);				
 				if(msg==-1){
 					//alert("-1");
 					$("#sp").css("color","red"); 
@@ -75,8 +74,7 @@
 				}else if(msg==0){
 					 $("#sp").css("color","red"); 
 					 $("#sp").html("用户名不能为空！"); 					
-	 
-				}else{
+				}else {
 					 $("#sp").css("color","green"); 
 					 $("#sp").html("用户名可用！"); 	
 				}

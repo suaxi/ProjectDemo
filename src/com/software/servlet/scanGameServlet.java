@@ -16,11 +16,13 @@ public class scanGameServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		QueryServiceImpl qS = new QueryServiceImpl();
+		//获取页面提交的信息
 		String gameName = req.getParameter("gameName");
+		//调用service层方法，进行模糊查询
 		List<Map<String, Object>> list = qS.scanGame(gameName);
 		req.getSession().setAttribute("list", list);
-
-		req.getRequestDispatcher("AdminEL.jsp").forward(req, resp);
+		//请求转发到游戏信息查询界面
+		req.getRequestDispatcher("customeEL.jsp").forward(req, resp);
 	}
 
 	@Override
