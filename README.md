@@ -62,8 +62,8 @@ By KaiZuKa Suaxi
 ---
 
 # 数据流图
-![Alt用户层]（/WebContent/images/user.png）
-![Alt管理员层]（/WebContent/images/admin.png）
+![avatar]（/WebContent/images/user.png "用户层"）
+![avatar]（/WebContent/images/admin.png "管理员层"）
 
 ---
 
@@ -79,6 +79,6 @@ By KaiZuKa Suaxi
 
 + Web前端：如何将网页设计得更合理
 
-###                                                  nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;nbsp;2019.06.27
+###                                                2019.06.27
 ---
 ---
