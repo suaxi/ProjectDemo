@@ -62,9 +62,9 @@ By KaiZuKa Suaxi
 ---
 
 # 数据流图
-![（/WebContent/images/user.png "用户层"）]
+[![]（/WebContent/images/user.png "用户层"）]
 
-![（/WebContent/images/admin.png "管理员层"）]
+[![]（/WebContent/images/admin.png "管理员层"）]
 
 ---
 
