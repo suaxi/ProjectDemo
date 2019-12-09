@@ -61,7 +61,10 @@ By KaiZuKa Suaxi
 
 ---
 
-# 数据流图见PPT
+# 数据流图
+![Alt 用户层]（WebContent/images/user.png）
+![Alt 管理员层]（WebContent/images/admin.png）
+
 ---
 
 #   03 成果展示及心得体会
