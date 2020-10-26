@@ -1,6 +1,6 @@
 # XX游戏网站项目报告说明书
 
-By KaiZuKa Suaxi 
+By Kaizuka Suaxi 
 ---
 ---
 
